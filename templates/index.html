@@ -21,11 +21,7 @@
             {{ task.text }}
             <a href="{{ url_for('edit', task_id=task.id) }}">Edit</a>
             <a href="{{ url_for('delete', task_id=task.id) }}">Delete</a>
-            <div>
-                <a href="{{ url_for('filter_tasks', status='all') }}">All</a>
-                <a href="{{ url_for('filter_tasks', status='active') }}">Active</a>
-                <a href="{{ url_for('filter_tasks', status='completed') }}">Completed</a>
-            </div>
+            
         </li>
         {% endfor %}
     </ul>
